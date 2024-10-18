@@ -1,0 +1,46 @@
+{
+          "manifest_version": 3,
+          "name": "Auto Scroll with Shortcut",
+          "version": "1.0",
+          "description": "",
+          "permissions": [
+                    "activeTab",
+                    "scripting"
+          ],
+          "background": {
+                    "service_worker": "background.js"
+          },
+          "content_scripts": [
+                    {
+                              "matches": [
+                                        "<all_urls>"
+                              ],
+                              "js": [
+                                        "content.js"
+                              ]
+                    }
+          ],
+          "commands": {
+                    "toggle-scroll": {
+                              "suggested_key": {
+                                        "default": "Alt+S"
+                              },
+                              "description": "Start or stop auto scrolling"
+                    },
+                    "increase-speed": {
+                              "suggested_key": {
+                                        "default": "Alt+G"
+                              },
+                              "description": "Increase scrolling speed"
+                    },
+                    "decrease-speed": {
+                              "suggested_key": {
+                                        "default": "Alt+A"
+                              },
+                              "description": "Decrease scrolling speed"
+                    }
+          }
+}
+
+
+
