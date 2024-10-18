@@ -1,0 +1,23 @@
+{
+          "manifest_version": 3,
+          "name": "Design Mode Toggle",
+          "version": "1.0",
+          "action": {
+                    "default_popup": "popup.html",
+                    "default_title": "Toggle Design Mode"
+          },
+          "permissions": [
+                    "scripting",
+                    "activeTab"
+          ],
+          "content_scripts": [
+                    {
+                              "matches": [
+                                        "<all_urls>"
+                              ],
+                              "js": [
+                                        "popup.js"
+                              ]
+                    }
+          ]
+}

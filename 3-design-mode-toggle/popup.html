@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        min-width: 200px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      #toggleEdit {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #toggleEdit.on {
+        background-color: #f44336; /* สีแดงสำหรับ OFF */
+      }
+      #toggleEdit.off {
+        background-color: #4caf50; /* สีเขียวสำหรับ ON */
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggleEdit" class="on">ON</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
